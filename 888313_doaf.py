@@ -287,7 +287,7 @@ def lineBot(op):
                 cnt = nadya. getContact(op.param2)
                 nadya.sendMessage(op.param1,cnt.displayName + "\n\n" + str(wait["acomment"]))
 
-       if op.type == 24:
+        if op.type == 24:
             print ("[ 24 ] NOTIFIED LEAVE ROOM")
             if settings["autoLeave"] == True:
                 nadya.leaveRoom(op.param1)
