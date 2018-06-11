@@ -488,7 +488,7 @@ def lineBot(op):
                     if c in [""," ","\n",None]:
                         nadya.sendMessage(msg.to,"👎เกิดข้อผิดพลาดʕ•ᴥ•ʔ")
                     else:
-                        wait["acomment"] = c
+                        settings["acomment"] = c
                         nadya.sendMessage(msg.to,"👍เสร็จสิ้นʕ•ᴥ•ʔ")
                 elif "ตั้งออก:" in msg.text.lower():
                     c = msg.text.replace("ตั้งออก:","")
